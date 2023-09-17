@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#destination{
+    height: 100vh;
+    width: 100%;
+    background: url("assets/destination/background-destination-desktop.jpg"), lightgray 0px 0px / 100% 100% no-repeat;
+    mix-blend-mode: screen;
+    /* background-image: url("assets/home/background-home-desktop.jpg"); */
+    /* background-position: center;
+    background-size: cover;
+    position: relative; */
+}
+
+nav.header{
+    display: grid;
+    /* justify-content: space-around; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 35px 0px;
+
+}
+
+nav.header a{
+    align-self: center;
+    position: relative;
+}
+
+nav.header a img{
+    position: relative;
+    left: 45px;
+}
+
+nav.header div{
+    position: relative;
+    grid-column: 2/span 2;
+    justify-self: flex-end;
+}
+
+.simpleLine{
+    width: 520px;
+    position: absolute;
+    z-index: 10;
+    top: 35px;
+    right: 655px;
+    opacity: 0.2515;
+    background: #FFF;
+}
+
+.effectLineHome{
+    transform: scale(0);
+    background: white;
+    width: 70px;
+    position: absolute;
+    left: 66px;
+    transition: all 500ms;
+}
+.effectLineDest{
+    transform: scale(1);
+    background: white;
+    width: 110px;
+    position: absolute;
+    left: 172px;
+    transition: all 500ms;
+}
+.effectLineCrew{
+    transform: scale(0);
+    background: white;
+    width: 60px;
+    position: absolute;
+    left: 327px;
+    transition: all 500ms;
+}
+.effectLineTech{
+    transform: scale(0);
+    background: white;
+    width: 108px;
+    position: absolute;
+    right: 143px;
+    transition: all 500ms;
+}
+
+.activeEffectLine{
+    transform: scale(1);
+}
+
+nav.header div ul{
+    display: flex;
+    width: fit-content;
+    padding: 25px 65px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+}
+
+nav.header div ul li{
+    list-style: none;
+    /* padding: 0px 37px; */
+    padding-right: 40px;
+}
+
+nav.header div ul li a{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
+
+.mainContainer_Destin_Europa{
+    display: grid;
+    grid-template-columns: 62% 38%;
+    grid-template-rows: 1fr;
+}
+
+.imgEuropaContainer h3{
+    margin-left: 182px;
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.imgEuropaContainer h3 span{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.imgEuropaContainer img{
+    width: 378px;
+    height: 378px;
+    margin-top: 78px;
+    margin-left: 260px;
+}
+
+.textEuropaContainer nav{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.textEuropaContainer nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.textEuropaContainer nav ul li{
+    list-style: none;
+}
+
+.textEuropaContainer nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.aboveEuropaContext_moon{
+    transform: scale(0);
+    margin-top: 5px;
+    width: 41px;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+    transition: all 500ms;
+}
+.aboveEuropaContext_mars{
+    transform: scale(0);
+    margin-top: 5px;
+    width: 34px;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+    left: 82px;
+    transition: all 500ms;
+}
+.aboveEuropaContext_europa{
+    transform: scale(1);
+    margin-top: 5px;
+    width: 54px;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+    left: 160px;
+    transition: all 500ms;
+}
+.aboveEuropaContext_titan{
+    transform: scale(0);
+    margin-top: 5px;
+    width: 37px;
+    height: 1px;
+    background: #FFF;
+    position: absolute;
+    left: 259px;
+    transition: all 500ms;
+}
+
+.activeAboveEuropaContext{
+    transform: scale(1);
+}
+
+.europaContext{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.textEuropaContainer p{
+    width: 444px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+
+.behindEuropaContext{
+    width: 444px;
+    height: 1px;
+    opacity: 0.2515;
+    background: #FFF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.europaDistanceInfo{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.europaDistanceInfo h4{
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.europaDistanceInfo h1{
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}

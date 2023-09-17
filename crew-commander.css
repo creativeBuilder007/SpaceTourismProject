@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#crew{
+    height: 100vh;
+    width: 100%;
+    background: url("assets/crew/background-crew-desktop.jpg"), lightgray 0px 0px / 100% 100% no-repeat;
+    mix-blend-mode: screen;
+    /* background-image: url("assets/home/background-home-desktop.jpg"); */
+    /* background-position: center;
+    background-size: cover;
+    position: relative; */
+}
+
+nav{
+    display: grid;
+    /* justify-content: space-around; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 35px 0px;
+
+}
+
+nav a{
+    align-self: center;
+    position: relative;
+}
+
+nav a img{
+    position: relative;
+    left: 45px;
+}
+
+nav div{
+    position: relative;
+    grid-column: 2/span 2;
+    justify-self: flex-end;
+}
+
+.simpleLine{
+    width: 520px;
+    position: absolute;
+    z-index: 10;
+    top: 35px;
+    right: 655px;
+    opacity: 0.2515;
+    background: #FFF;
+}
+
+.effectLineHome{
+    transform: scale(0);
+    background: white;
+    width: 70px;
+    position: absolute;
+    left: 66px;
+    transition: all 500ms;
+}
+.effectLineDest{
+    transform: scale(0);
+    background: white;
+    width: 110px;
+    position: absolute;
+    left: 172px;
+    transition: all 500ms;
+}
+.effectLineCrew{
+    transform: scale(1);
+    background: white;
+    width: 60px;
+    position: absolute;
+    left: 327px;
+    transition: all 500ms;
+}
+.effectLineTech{
+    transform: scale(0);
+    background: white;
+    width: 108px;
+    position: absolute;
+    right: 143px;
+    transition: all 500ms;
+}
+
+.activeEffectLine{
+    transform: scale(1);
+}
+
+nav div ul{
+    display: flex;
+    width: fit-content;
+    padding: 25px 65px;
+    padding-right: 100px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+}
+
+nav div ul li{
+    list-style: none;
+    /* padding: 0px 37px; */
+    padding-right: 40px;
+}
+
+nav div ul li a{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
+
+.crewMembers{
+    position: relative;
+}
+
+.crewMembers h3{
+    margin-left: 182px;
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.crewMembers h3 span{
+    opacity: 0.25;
+}
+.crewMembers h4{
+    margin-bottom: 10px;
+    margin-left: 182px;
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5042;
+}
+.crewMembers h1{
+    margin-bottom: 30px;
+    margin-left: 182px;
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.crewMembers p{
+    margin-left: 182px;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 444px;
+}
+
+#commander{
+    /* visibility: hidden; */
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+
+}
+#commander .commanderImg img{
+    width: 350px;
+    position: absolute;
+    top: -62px;
+    left: 780px;
+}
+
+#engineer{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    margin-top: 100px;
+}
+#engineer .engineerImg img{
+    width: 350px;
+    position: absolute;
+    top: 48px;
+    left: 780px;
+}
+
+#pilot{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    margin-top: 100px;
+}
+#pilot .pilotImg img{
+    width: 350px;
+    position: absolute;
+    top: 2px;
+    left: 780px;
+}
+
+#specialist{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    margin-top: 100px;
+}
+#specialist .specialistImg img{
+    width: 278px;
+    position: absolute;
+    top: 2px;
+    left: 780px;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 60px;
+    left: 186px;
+}
+.indicators button{
+    border-radius: 20%;
+    background-color: #FFF;
+    margin-right: 5px;
+    outline: none;
+    width: 30px;
+    height: 3px;
+    border: 1px solid white;
+    opacity: 0.25;
+}
+button.commander{
+    opacity: 1;
+}
